@@ -1,5 +1,5 @@
 table = [
-#   id     +      -      *      /      (      )      $     E      T      F  
+#     id     +     -      *     /    (      )     $     E      T      F  
     ["S5",  None, None, None, None, "S4", None, None,  "1",   "2",   "3"  ],  # state 0
     [None,  "S6", "S7", None, None, None, None, "Acc", None, None, None ],  # state 1
     [None,  "R3", "R3", "S8", "S9", None, "R3", "R3",  None, None, None ],  # state 2
