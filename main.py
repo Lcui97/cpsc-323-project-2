@@ -2,22 +2,21 @@ from get_input import *
 import table
 
 def main():
-    input = get_input("./test_cases/10.in")
+    input = get_input("./test_cases/1.in")
+    input += "$" # Example: (id+id)/id$
 
-    stack = []
+    stack = [0] # Initial state is 0
     word = ""
-    while True:
-        for char in input:
-            word += char
-            if word in table.terminals:
-                stack.append(word)
-                word = ""
+    index = 0
 
-                # now check the grammar
+    while index < len(input):
+        current_char = input[index]
+        word += current_char
 
-            else:
-                continue
-
+        if word in table.terminals:
+            return
+        else:
+            index += 1
         
 
 if __name__ == "__main__":
