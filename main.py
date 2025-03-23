@@ -13,7 +13,7 @@ def main():
         current_char = input[index]
         word += current_char
 
-        if word in table.terminals:
+        if word in table.valid:
             return
         else:
             index += 1
