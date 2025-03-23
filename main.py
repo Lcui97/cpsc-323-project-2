@@ -1,5 +1,5 @@
 from get_input import *
-from table import *
+import table
 
 def main():
     input = get_input("./test_cases/10.in")
