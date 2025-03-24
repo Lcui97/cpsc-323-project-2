@@ -1,5 +1,7 @@
 valid_tokens = ["id", "+", "-", "*", "/", "(", ")"]
 
+
+table_column = ["id", "+", "-", "*", "/", "(", ")", "$", "E", "T", "F"]
 table = [
 #     id     +     -      *     /    (      )     $     E      T      F  
     ["S5",  None, None, None, None, "S4", None, None,  "1",   "2",   "3"  ],  # state 0

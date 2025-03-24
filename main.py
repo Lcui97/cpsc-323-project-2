@@ -13,7 +13,7 @@ def main():
         current_state = stack[-1]
         current_token = input[index]
 
-        action = table.table[current_state][table.valid_tokens.index(current_token)]
+        action = table.table[current_state][table.table_column.index(current_token)]
         print(action)
         break
         
