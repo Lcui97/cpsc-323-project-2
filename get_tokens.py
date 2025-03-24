@@ -10,15 +10,12 @@ def get_tokens(filename):
         current_token = ""
 
         for char in input:
-            if char in table.valid_tokens:
-                if current_token:
-                    tokens.append(current_token)
-                    current_token = ""
-                tokens.append(char)
-            else:
-                current_token += char
+            current_token += char
+            if current_token in table.valid_tokens:
+                tokens.append(current_token)
+                current_token = ""
 
-        if current_token:
+        if current_token in table.valid_tokens:
             tokens.append(current_token)
 
         return tokens
