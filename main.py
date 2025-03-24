@@ -2,9 +2,11 @@ from get_tokens import *
 import table
 
 def main():
-    tokens = get_tokens("./test_cases/4.in")
-    print(tokens)
+    input = get_tokens("./test_cases/4.in")
+    input.append("$")
+    print(input)
 
+    stack = [0]
     
         
 
