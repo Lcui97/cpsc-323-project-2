@@ -3,6 +3,10 @@ from data import *
 
 def main():
     input = get_tokens("./test_cases/1.in")
+
+    if not input:
+        return
+
     input.append("$")
     print(input)
 
