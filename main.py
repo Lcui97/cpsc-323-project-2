@@ -8,6 +8,8 @@ def main():
 
     stack = [0]
     index = 0
+
+    print(f"Beginning Stack: {stack}")
     
     while True:
         current_state = stack[-1]
@@ -16,6 +18,15 @@ def main():
 
         action = table.table[current_state][table.table_column.index(current_token)]
         print(f"Action: {action}")
+
+        if action.startswith('S'):
+            state_to_shift = int(action[1:])
+            stack.append(current_token)
+            stack.append(state_to_shift)
+            index += 1
+            print(f"Shifted Stack: {stack}")
+
+            
         break
         
     
