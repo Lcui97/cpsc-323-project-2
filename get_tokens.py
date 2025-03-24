@@ -1,4 +1,4 @@
-import table
+import data
 
 # Gets input string and converts it into an array of tokens
 def get_tokens(filename):
@@ -11,7 +11,7 @@ def get_tokens(filename):
 
         for char in input:
             current_token += char
-            if current_token in table.valid_tokens:
+            if current_token in data.valid_tokens:
                 tokens.append(current_token)
                 current_token = ""
 
