@@ -12,9 +12,10 @@ def main():
     while True:
         current_state = stack[-1]
         current_token = input[index]
+        print(f"Current token: {current_token}")
 
         action = table.table[current_state][table.table_column.index(current_token)]
-        print(action)
+        print(f"Action: {action}")
         break
         
     
