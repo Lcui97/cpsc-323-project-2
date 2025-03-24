@@ -15,7 +15,4 @@ def get_tokens(filename):
                 tokens.append(current_token)
                 current_token = ""
 
-        if current_token in table.valid_tokens:
-            tokens.append(current_token)
-
         return tokens
