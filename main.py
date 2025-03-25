@@ -29,6 +29,12 @@ def main():
             stack.append(state_to_shift)
             index += 1
             print(f"Shifted Stack: {stack}")
+            
+        elif action.startswith('R'):
+            # Figure out which produciton rule to use
+            produciton_index = int(action[1:])
+            
+            lhs, rhs = productions[produciton_index]
 
             
         break
