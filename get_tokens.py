@@ -1,6 +1,6 @@
 import data
 
-# Gets input string and converts it into an array of tokens
+# Gets input string and converts it into an array of tokens.
 def get_tokens(filename):
     try:
         with open(filename, "r") as file:
