@@ -30,8 +30,15 @@ def main():
             index += 1
             print(f"Shifted Stack: {stack}")
 
+        elif action.startswith('R'):
+            # Reduce. 
+            break
+
+        elif action == "Acc":
+            # Accept. We output CST.
+            break
             
-        break
+        break # Remove this if necessary. This is used to check if the code is working incrementally.
         
     
         
