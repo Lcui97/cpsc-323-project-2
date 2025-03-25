@@ -42,7 +42,7 @@ def main():
             # Parsing failed.
             break
             
-        break # Remove this if necessary.
+        break # Remove this if necessary. We traverse the element in the input by incrementing the index.
         
     
         
