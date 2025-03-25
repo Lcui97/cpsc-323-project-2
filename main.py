@@ -37,6 +37,10 @@ def main():
         elif action == "Acc":
             # Accept. We output CST.
             break
+
+        else:
+            # Parsing failed.
+            break
             
         break # Remove this if necessary.
         
