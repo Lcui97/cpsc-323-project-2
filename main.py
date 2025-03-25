@@ -11,13 +11,13 @@ def main():
     print(input)
 
     stack = [0]
-    index = 0
+    input_index = 0
 
     print(f"Beginning Stack: {stack}")
 
     while True:
         current_state = stack[-1]
-        current_token = input[index]
+        current_token = input[input_index]
         print(f"Current token: {current_token}")
 
         action = table[current_state][table_column.index(current_token)]
@@ -27,7 +27,7 @@ def main():
             state_to_shift = int(action[1:])
             stack.append(current_token)
             stack.append(state_to_shift)
-            index += 1
+            input_index += 1
             print(f"Shifted Stack: {stack}")
 
         elif action.startswith('R'):
@@ -42,7 +42,7 @@ def main():
             # Parsing failed.
             break
             
-        break # Remove this if necessary. We traverse the element in the input by incrementing the index.
+        break # Remove this if necessary. We traverse the element in the input by incrementing the input_index.
         
     
         
