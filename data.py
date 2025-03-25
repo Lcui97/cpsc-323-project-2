@@ -24,5 +24,16 @@ table = [
     [None,  "R7", "R7", "R7", "R7", None, "R7", "R7",  None, None, None ]   # state 15
 ]
 
+# Production rules from the provided grammar
+productions = {
+    1: ("E", ["E", "+", "T"]),
+    2: ("E", ["E", "-", "T"]),
+    3: ("E", ["T"]),
+    4: ("T", ["T", "*", "F"]),
+    5: ("T", ["T", "/", "F"]),
+    6: ("T", ["F"]),
+    7: ("F", ["(", "E", ")"]),
+    8: ("F", ["id"])
+}
 
 
