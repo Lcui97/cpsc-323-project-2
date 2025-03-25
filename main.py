@@ -38,7 +38,7 @@ def main():
             # Accept. We output CST.
             break
             
-        break # Remove this if necessary. This is used to check if the code is working incrementally.
+        break # Remove this if necessary.
         
     
         
