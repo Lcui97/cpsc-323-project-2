@@ -1,7 +1,7 @@
 valid_tokens = ["id", "+", "-", "*", "/", "(", ")"]
 
 
-# Very likely we need to put production rules here, but I will do it later
+# Put the production rules here.
 
 table_column = ["id", "+", "-", "*", "/", "(", ")", "$", "E", "T", "F"]
 table = [
