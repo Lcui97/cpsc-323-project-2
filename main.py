@@ -32,10 +32,10 @@ def main():
         
         elif action.startswith('R'):
             # Reduce. 
-            # Figure out which produciton rule to use
-            produciton_index = int(action[1:])
+            # Figure out which production rule to use
+            production_index = int(action[1:])
             
-            lhs, rhs = productions[produciton_index]
+            lhs, rhs = productions[production_index]
             break
 
         elif action == "Acc":
